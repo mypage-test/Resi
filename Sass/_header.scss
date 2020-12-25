@@ -1,0 +1,117 @@
+// Start header
+.header {
+    padding-top: 10rem;
+    padding-bottom: $pd +50;
+
+    @media (max-width: 992px) {
+        padding-top: 80px;
+    }
+
+    @media (max-width:768px) {
+        padding-top: 100px;
+    }
+
+    @media (max-width:575px) {
+        padding-top: 110px;
+    }
+
+    .first {
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            line-height: 56px;
+            color: $four-color;
+
+            @media (max-width: 992px) {
+                font-size: 48px;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                font-size: 28px;
+                line-height: 36px;
+                text-align: left;
+            }
+            @media (max-width: 575px) {
+                font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+
+
+
+        .list-unstyled {
+            color: $four-color;
+            font-size: 14px;
+        }
+
+        .list-unstyled li {
+            margin-bottom: 13px;
+            font-family: "Open Sans", sans-serif;
+
+        }
+
+        .list-unstyled li i {
+            margin-right: 9px;
+        }
+
+        .list-unstyled li .fa-check {
+            color: $maincolor;
+        }
+
+        .btn-header-started {
+            @include header-btn-responsive();
+            @extend.button;
+            background-color: $maincolor;
+            color: white;
+
+            &:hover {
+                background: $five-color;
+                border-color: $five-color;
+            }
+        }
+
+        .btn1 {
+            @media (max-width:575px) {
+                text-align: center;
+            }
+        }
+
+        .btn-Request-quote {
+            @include header-btn-responsive();
+            @extend.button;
+            color: $maincolor;
+
+            &:hover {
+                background: $maincolor;
+                border-color: $five-color;
+                color: white;
+            }
+        }
+    }
+
+    .second {
+        text-align: center;
+
+        img {
+            @media (max-width:991px) {
+                width: 50%;
+            }
+
+            @media (max-width:768px) {
+                width: 70%;
+            }
+
+            @media (max-width:575px) {
+                width: 80%;
+            }
+
+        }
+
+
+    }
+
+}
+
+// End header

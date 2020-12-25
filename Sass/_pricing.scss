@@ -1,0 +1,104 @@
+.pricing {
+    .box.feature {
+        z-index: 10;
+        margin: -30px -5px 0 -5px;
+        @include pricing-responsive();
+    }
+
+    padding: 60px 0;
+
+    .row {
+        padding-top: 40px;
+    }
+
+    .col-lg-4 {
+        padding: 0;
+    }
+
+    .title h2 {
+        @extend.section-title;
+    }
+
+    .box {
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+        background: #fff;
+        text-align: center;
+        @include pricing-responsive();
+
+        .box-type {
+            h3 {
+                font-size: 28px;
+                font-family: "Open Sans", sans-serif;
+                margin-bottom: 15px;
+                font-weight: 300;
+            }
+
+            h4 {
+                font-size: 46px;
+                color: $maincolor;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            span {
+                color: #777;
+                font-family: "Open Sans", sans-serif;
+            }
+        }
+
+        .box-list {
+            text-align: left;
+            margin-top: 15px;
+
+            .list-unstyled {
+                .na {
+                    text-decoration: line-through;
+                    color: rgb(212, 212, 212)
+                }
+
+                li {
+                    font-family: "Open Sans", sans-serif;
+                    margin-top: 10px;
+                    color: #999;
+
+                    i {
+                        margin-right: 10px;
+                        font-size: 14px;
+                    }
+
+                    .fa-check {
+                        color: $maincolor
+                    }
+
+                    .fa-times {
+                        color: #ccc;
+                    }
+                }
+
+            }
+        }
+
+        .list-btn {
+            a.active {
+                background: $maincolor;
+
+                &:hover {
+                    background: $five-color;
+                }
+            }
+
+            a {
+                @extend.button;
+                padding: 10px 35px;
+                font-size: 14px;
+                background: $four-color;
+                color: white;
+
+                &:hover {
+                    background: $maincolor
+                }
+            }
+        }
+    }
+}

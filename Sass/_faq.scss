@@ -1,0 +1,100 @@
+.FAQ {
+    padding-top: 60px;
+
+    .title h2 {
+        @extend.section-title;
+        &:after{
+          display: none;
+        }
+        @media (max-width:575px) {
+           
+        }
+    }
+}
+
+.faq-questions {
+    padding-bottom: 85px;
+
+
+    .collapsed {
+        cursor: pointer;
+    }
+
+}
+
+.card {
+    background-color: #fff;
+    border: unset;
+    border-radius: 4px;
+    box-shadow: unset;
+    margin-left: 31px;
+    
+}
+
+.card-header {
+    background-color: unset;
+    border: none;
+    padding: 0px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (max-width:575px) {
+        background-color: unset;
+        border: none;
+        padding: 0px;
+        padding-left: 16px;
+        padding-right: 0;
+    }
+}
+
+.panel-title {
+    font-size: 17px;
+    margin: 0;
+    color: rgb(59, 62, 105);
+    font-weight: 500;
+    margin-top: 27px;
+
+    .collapsed {
+        i {
+            position: absolute;
+            left: -25px;
+            top: 26px;
+
+            @media (max-width:575px) {
+                left: -8px;
+            }
+
+            &::before {
+                content: "\f078" !important;
+            }
+        }
+
+    }
+
+    i {
+        position: absolute;
+        left: -25px;
+        top: 26px;
+
+        @media (max-width:575px) {
+            left: -8px;
+        }
+
+        &::before {
+            content: "\f077" !important;
+        }
+    }
+}
+
+.card-body {
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    color: rgb(75, 75, 75);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media (max-width:575px) {
+        margin-left: 15px;
+    }
+   
+}

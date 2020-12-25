@@ -1,0 +1,46 @@
+// start counts
+.counts {
+    background: $section-bg;
+    padding: 60px 0 60px;
+
+    .box {
+        padding: 30px 30px 25px 30px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        background: #fff;
+    }
+
+    .box i {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        background: $maincolor;
+        padding: 12px;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .box .fa-smile-o {
+        padding-left: 14px;
+        padding-right: 14px
+    }
+
+    .box span {
+        font-size: 36px;
+        color: $three-color;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .box p {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        color: #777;
+    }
+}
+
+// end counts

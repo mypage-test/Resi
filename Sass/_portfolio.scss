@@ -1,0 +1,23 @@
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .list {
+        .list-unstyled {
+            .active{
+                color: $maincolor
+            }
+            li {
+                display: inline-block;
+                margin-right: 30px;
+                cursor: pointer;
+                font-weight: 500;
+                text-transform: $font-uppercase;
+                &:hover{
+                    color: $maincolor;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.about-us {
+    padding-bottom: 50px;
+
+    .first {
+        h2 {
+            font-weight: $font-weight;
+            font-size: 42px;
+            line-height: 50px;
+            margin-bottom: 20px;
+            color: $four-color;
+            font-family: "Raleway", sans-serif;
+        }
+
+        h3 {
+            font-weight: 500;
+            line-height: 32px;
+            font-size: 24px;
+            font-family: "Raleway", sans-serif;
+            margin-bottom: 30px;
+        }
+    }
+
+    .second {
+        p {
+            margin-bottom: 40px;
+            font-family: "Open Sans", sans-serif;
+
+            &:last-child {
+                font-style: italic;
+
+            }
+
+        }
+
+        .list-unstyled {
+            li {
+                margin-bottom: 13px;
+                margin-left: 20px;
+                font-weight: 400;
+                font-family: "Open Sans", sans-serif;
+                text-indent: -11px;
+
+                i {
+                    margin-right: 2px;
+                }
+
+                .fa-check {
+                    color: $maincolor;
+                }
+            }
+
+        }
+
+    }
+
+}

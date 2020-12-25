@@ -1,0 +1,106 @@
+// Start services
+.services {
+    padding: 60px 0;
+
+    .title {
+        h2 {
+            @extend.section-title;
+        }
+    }
+
+    .icon-1 {
+        @include color-box(#47aeff);
+
+    }
+
+    .icon-2 {
+        @include color-box(#ffa76e);
+
+    }
+
+    .icon-3 {
+        @include color-box(#e80368);
+
+    }
+
+    .icon-4 {
+        @include color-box(#11dbcf);
+
+    }
+
+    .first {
+        margin-top: 100px;
+    }
+
+    .box {
+        padding: 70px 20px 80px 20px;
+        transition: all ease-in-out 0.3s;
+        background: #fff;
+        box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+        .icon {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: ease-in-out 0.3s;
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+            }
+
+            i {
+                font-size: 36px;
+                transition: 0.2s;
+                position: relative;
+                color: $maincolor;
+
+            }
+
+            .fa-hand-spock-o {
+                color: #ffa76e;
+            }
+
+            .fa-hand-scissors-o {
+                color: #e80368;
+            }
+
+            .fa-hand-scissors-o {
+                color: #e80368;
+            }
+
+            .fa-hand-rock-o {
+                color: #11dbcf
+            }
+
+        }
+
+        h4 {
+            font-weight: 600;
+            margin: 10px 0 15px 0;
+            font-size: 22px;
+
+            a {
+                color: #434175;
+                transition: ease-in-out 0.3s;
+                text-decoration: none;
+            }
+        }
+
+        p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+
+}
+
+// end services
